@@ -71,7 +71,7 @@ public:
 
     static auto MakeWorkGuard(ContextType& context)
     {
-        return boost::asio::make_work_guard(context);
+        return boost::asio::prefer(context.get_executor(), boost::asio::execution::outstanding_work.tracked);
     }
 
 };

@@ -31,6 +31,7 @@
 #define CLI_DETAIL_GENERICASIOSCHEDULER_H_
 
 #include "../scheduler.h"
+#include "boostasiolib.h"
 
 namespace cli
 {
